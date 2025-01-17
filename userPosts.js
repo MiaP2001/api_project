@@ -47,6 +47,5 @@ async function fetchUserAlbums() {
       "<p>Klaida: vartotojo albumų nepavyko įkelti.</p>";
   }
 }
-
 fetchUserPosts();
 fetchUserAlbums();
