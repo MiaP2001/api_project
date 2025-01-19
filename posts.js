@@ -13,7 +13,7 @@ async function fetchPosts() {
       const comments = post.comments;
 
       const listItem = document.createElement("li");
-      listItem.innerHTML = `<a href="post.html?postId=${post.id}">${post.title} (${comments.length})</a> - <a href="user.html?userId=${user.id}">${user.name}</a>`;
+      listItem.innerHTML = `<a href="post.html?postId=${post.id}">${post.title} (${comments.length})</a> - <a href="userPosts.html?userId=${user.id}">${user.name}</a>`;
       postsList.appendChild(listItem);
     }
   } catch (error) {
